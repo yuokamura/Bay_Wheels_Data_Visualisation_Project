@@ -9,6 +9,9 @@ https://s3.amazonaws.com/baywheels-data/index.html
 The website provides a month by month summary of the rides made.  These datasets are firstly concatenated to create one dataframe.  The start_time and end_time were stored as an object, thus changed to the DateTime.  Month, day of the week and hour information are extracted and added as new columns.  
 There was one ride which recorded duration time of nearly 250 hours, while all the rest of rides had lasted less than 24 hours.  This data point was simply eliminated.  Also, the duration of rides was recorded in seconds, and this was converted to minutes.
 
+## Files
+Initial data gathering, cleaning, and exploration is performed in `exploration.ipynb`.  Key insights from the exploration and analysis are gathered in `slide_deck.ipynb`.
+
 ## Summary of Findings
 Univariate exploration:  
 I have discovered that the duration of rides is right-skewed, but the majority of them are less than 30mins.  Most rides are very short and last 5 to 10 minutes.  The number of rides is affected by mainly by the time of the week (whether it is weekday or weekend), and also the time of day (a bimodal distribution with peaks at 8 and 17).  Also, the majority of users are subscribers (80 per cent to be more precise).  
